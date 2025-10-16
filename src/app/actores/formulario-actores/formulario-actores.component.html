@@ -12,6 +12,8 @@
         <mat-error>{{obtenerErrorCampoFechaNascimiento()}}</mat-error>
     </mat-form-field>
 
+    <app-input-img titulo="Foto del Actor" [urlImagenActual]="modelo?.foto" (archivoSelecionado)="archivoSeleccionado($event)"></app-input-img>
+
     <div class="contenedor-botones">
         <button mat-flat-button type="submit" [disabled]="form.invalid">
             Guardar Cambios
